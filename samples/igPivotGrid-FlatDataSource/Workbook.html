@@ -1,0 +1,77 @@
+﻿<div class="container-fluid">
+    <section class="container">
+        <div class="container-page">
+            <div class="col-xs-12 col-md-12">
+                <div class="col-lg-5" style="padding-left: 0px !important;">
+                    <label class="BannerTitle">Testing</label>
+                </div>
+                <div class="col-lg-1">
+                    <!--<div class="action-button" style="margin-left:50px;float: right;">
+                        <span defaultOverlayTarget></span>
+                        <button type="submit" class="action-btn action-btn-default" id="click" (click)="AddToStoryBook($event)">Add to Storybook</button>
+                    </div>-->
+                </div>
+                <div class="col-lg-4">
+                    <table>
+                        <tr style="vertical-align: top;">
+                            <td>
+                                <!--<div class="action-button" [hidden]="IS_PREVIOUS_HIDDEN">
+                                    <button type="submit" class="action-btn action-btn-default" (click)=PreviousSheet()><</button>
+                                </div>-->
+                            </td>
+                            <td>
+                                <div class="WorkbookSheetList">
+                                  
+                                    <!--<select>
+                                        <option *ngFor="let workbook of workbookSheetsList" value={{workbook.name}} (click)=onChange(workbook)>
+                                            {{workbook.name}}
+                                            
+                                        </option>
+                                    </select>-->
+
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="applicationMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ selected.name }}<span class="caret"></span>
+                                        </button>
+                                        <ul class="WorkbookSheetDropDownList dropdown-menu" aria-labelledby="applicationMenu">
+                                            <li *ngFor="let app of workbookSheetsList">
+                                                <a (click)=onChange(app)>{{ app.name }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="padding-left: 15px !important;">
+                                Selected Report: 
+                                <!--<div class="action-button" [hidden]="IS_NEXT_HIDDEN" style="padding-right: 556px;float: left;margin-left: -10px;">
+                                    <button type="submit" class="action-btn action-btn-default" (click)=NextSheet()>></button>
+                                </div>-->
+                            </td>
+                            <td> {{ReportID}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-1">
+                    <div class="action-button" style="margin-left:50px;float: right;">
+                        <button type="submit" class="action-btn action-btn-default" id="click" (click)="tableToExcel($event)">Export Grid</button>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="action-button" style="margin-left:50px;">
+                        <button type="submit" class="action-btn action-btn-default" (click)=btnHomeClick()>Home</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <div id="outerDiv" [style.width]="customizeWidth">
+                    <!--<pivotgrid #pivotGridReports></pivotgrid>-->
+                    <!--<InfraPivot [ReportID]="ReportID" [CacheURL]="CacheURL"></InfraPivot>-->
+                    <!--<InfraPivot1></InfraPivot1>-->
+                    <!--<PivotGrid [ReportID]="ReportID"></PivotGrid>-->
+                    <InfraPivotGrid [ReportID]="ReportID"></InfraPivotGrid>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

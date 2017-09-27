@@ -1,0 +1,902 @@
+[
+  {
+    "Sold_Dollars": "6743.87",
+    "Brand": "EYE CARE TEARS",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "42056.60",
+    "Brand": "HEMPAD",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "5994.65",
+    "Brand": "SPORIN ANTI FUNGAL",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "22588.31",
+    "Brand": "ACID BEGONE EXTRA STRENGTH SOFT CH",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "12918.24",
+    "Brand": "RASHFREE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "8572.94",
+    "Brand": "EYE CARE TEARS",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "55660.29",
+    "Brand": "HEMPAD",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "11526.41",
+    "Brand": "SPORIN ANTI FUNGAL",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "29468.86",
+    "Brand": "KIDCARE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "242009.45",
+    "Brand": "REFLUX",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "11464.40",
+    "Brand": "NO-VERTIGO",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "226440.34",
+    "Brand": "REFLUX",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "257536.22",
+    "Brand": "HAPPY DAY",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "7148.82",
+    "Brand": "SMOOTH SKIN",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "58446.37",
+    "Brand": "VAPOR CLEAR SHOWER SOOTHERS",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "136578.04",
+    "Brand": "SNIFAWAY PE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "610962.99",
+    "Brand": "SNIFAWAY SINGLE INGREDIENT",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "55339.95",
+    "Brand": "SMOOTH SKIN SKIN NOURISHING",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "84306.70",
+    "Brand": "SNIFAWAY PE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "396089.95",
+    "Brand": "SNIFAWAY SINGLE INGREDIENT",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "8707.57",
+    "Brand": "ACID BEGONE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "3581.85",
+    "Brand": "EYE CARE A",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "121623.25",
+    "Brand": "FRESH'N CLEAN POCKETMIST",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "18068.62",
+    "Brand": "NO-VERTIGO",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "648764.30",
+    "Brand": "SPORIN ANTI BACTERIAL",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "218550.06",
+    "Brand": "SWEET DREAMS ",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "8829.44",
+    "Brand": "ACID BEGONE MULTI SYMPTOM",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "14899.80",
+    "Brand": "CLEAN TEETH",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "4658.85",
+    "Brand": "EYE CARE A",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "6604.23",
+    "Brand": "CLEAN TEETH",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "2071.52",
+    "Brand": "EYE CARE A",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "15314.28",
+    "Brand": "EYE CARE TEARS",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "753914.05",
+    "Brand": "SNIFAWAY SINGLE INGREDIENT",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "12203.04",
+    "Brand": "ACID BEGONE EXTRA STRENGTH SOFT CH",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "7775.27",
+    "Brand": "CLEAN TEETH",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "1292.67",
+    "Brand": "EYE CARE A",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "566476.16",
+    "Brand": "CLEARSINUS PE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "95054.94",
+    "Brand": "FRESH'N CLEAN POCKETMIST",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "10818.18",
+    "Brand": "RASHFREE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "9945.68",
+    "Brand": "SMOOTH SKIN",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "52388.69",
+    "Brand": "CORTISONE 10",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "8119.75",
+    "Brand": "HAIR JUNGLE FOR MEN",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "6201.86",
+    "Brand": "COLDCARE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "13664.56",
+    "Brand": "KIDCARE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "692868.71",
+    "Brand": "CLEARSINUS PE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "6768.39",
+    "Brand": "COLDCARE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "29930.32",
+    "Brand": "CORTISONE 10",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "12055.43",
+    "Brand": "EYE CARE ADVANCED RELIEF",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "167584.81",
+    "Brand": "FRESH'N CLEAN POCKETPAKS",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "4460.12",
+    "Brand": "HAIR JUNGLE FOR MEN",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "20808.22",
+    "Brand": "KIDCARE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "44327.60",
+    "Brand": "CORTISONE 10",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "6859.18",
+    "Brand": "HAIR JUNGLE FOR MEN",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "44826.74",
+    "Brand": "SMOOTH SKIN SKIN NOURISHING",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "735727.45",
+    "Brand": "CLEARSINUS PE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "17929.97",
+    "Brand": "NO-VERTIGO",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "387747.52",
+    "Brand": "CLEARSINUS PE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "10230.98",
+    "Brand": "NO-VERTIGO",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "46107.89",
+    "Brand": "ACID BEGONE EXTRA STRENGTH",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "512844.06",
+    "Brand": "SPORIN ANTI BACTERIAL",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "24652.78",
+    "Brand": "ACID BEGONE EXTRA STRENGTH SOFT CH",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "12984.47",
+    "Brand": "COLDCARE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "90502.33",
+    "Brand": "HEMPAD",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "107592.25",
+    "Brand": "VAPOR CLEAR SHOWER SOOTHERS",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "12002.90",
+    "Brand": "EYE CARE ADVANCED RELIEF",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "35827.56",
+    "Brand": "SAMSONS BAGS",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "29423.90",
+    "Brand": "VAPOR CLEAR VP ADULT",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "12245.76",
+    "Brand": "SMOOTH SKIN",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "105079.53",
+    "Brand": "VAPOR CLEAR SHOWER SOOTHERS",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "4867.74",
+    "Brand": "ACID BEGONE MULTI SYMPTOM",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "131240.39",
+    "Brand": "REFLUX",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "426951.70",
+    "Brand": "REFLUX 150",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "31938.89",
+    "Brand": "KIDCARE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "178343.22",
+    "Brand": "SNIFAWAY PE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "786271.23",
+    "Brand": "SNIFAWAY SINGLE INGREDIENT",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "62765.82",
+    "Brand": "ANTI-GERM",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "3935.37",
+    "Brand": "HAIR JUNGLE FOR MEN",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "1276164.74",
+    "Brand": "FRESH'N CLEAN MOUTHWASH",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "66489.81",
+    "Brand": "HEMPAD",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "23807.51",
+    "Brand": "EYE CARE ADVANCED RELIEF",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "86543.36",
+    "Brand": "SAMSONS BAGS",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "657522.68",
+    "Brand": "SPORIN ANTI BACTERIAL",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "877383.80",
+    "Brand": "FRESH'N CLEAN MOUTHWASH",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "275049.00",
+    "Brand": "HAPPY DAY",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "54954.13",
+    "Brand": "ACID BEGONE EXTRA STRENGTH",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "72772.74",
+    "Brand": "ANTI-GERM",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "11819.20",
+    "Brand": "SPORIN LIP TREATMENT",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "12304.09",
+    "Brand": "EYE CARE TEARS",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "249016.85",
+    "Brand": "FRESH'N CLEAN POCKETPAKS",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "148887.71",
+    "Brand": "ANTI-GERM",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "451342.44",
+    "Brand": "HAPPY DAY",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "4861.70",
+    "Brand": "ACID BEGONE MULTI SYMPTOM",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "24223.57",
+    "Brand": "CORTISONE 10",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "187409.77",
+    "Brand": "FRESH'N CLEAN POCKETPAKS",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "110353.45",
+    "Brand": "REFLUX",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "538968.86",
+    "Brand": "REFLUX 150",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "54833.52",
+    "Brand": "SMOOTH SKIN SKIN NOURISHING",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "439336.24",
+    "Brand": "SNIFAWAY SINGLE INGREDIENT",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "34062.06",
+    "Brand": "VAPOR CLEAR VP ADULT",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "18930.58",
+    "Brand": "ACID BEGONE EXTRA STRENGTH SOFT CH",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "85375.37",
+    "Brand": "VAPOR CLEAR SHOWER SOOTHERS",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "8125.91",
+    "Brand": "ACID BEGONE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "2219649.87",
+    "Brand": "FRESH'N CLEAN MOUTHWASH",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "176147.13",
+    "Brand": "HAPPY DAY CERTAINTY",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "13611.94",
+    "Brand": "RASHFREE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "168347.32",
+    "Brand": "HAPPY DAY CERTAINTY",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "23269.68",
+    "Brand": "SPORIN LIP TREATMENT",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "94282.51",
+    "Brand": "SNIFAWAY PE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "107868.94",
+    "Brand": "ANTI-GERM",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "360868.52",
+    "Brand": "HAPPY DAY",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "16210.37",
+    "Brand": "SPORIN ANTI FUNGAL",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "417063.71",
+    "Brand": "CLEARSINUS PSE",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "59870.67",
+    "Brand": "VAPOR CLEAR VP ADULT",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "277174.31",
+    "Brand": "REFLUX 150",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "4062.18",
+    "Brand": "SMOOTH SKIN",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "116506.81",
+    "Brand": "SWEET DREAMS ",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "391400.95",
+    "Brand": "CLEARSINUS PSE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "84120.37",
+    "Brand": "SAMSONS BAGS",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "170444.41",
+    "Brand": "SNIFAWAY PE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "93866.98",
+    "Brand": "HAPPY DAY CERTAINTY",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "316593.42",
+    "Brand": "REFLUX 150",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "322380.62",
+    "Brand": "CLEARSINUS PSE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "181960.03",
+    "Brand": "REFLUX",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "47685.42",
+    "Brand": "VAPOR CLEAR VP ADULT",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "343569.77",
+    "Brand": "FRESH'N CLEAN POCKETPAKS",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "79958.12",
+    "Brand": "HAPPY DAY CERTAINTY",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "27191.44",
+    "Brand": "SMOOTH SKIN SKIN NOURISHING",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "8325.53",
+    "Brand": "ACID BEGONE MULTI SYMPTOM",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "49605.98",
+    "Brand": "CORTISONE 10",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "317342.47",
+    "Brand": "FRESH'N CLEAN POCKETPAKS",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "6715.38",
+    "Brand": "HAIR JUNGLE FOR MEN",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "57607.34",
+    "Brand": "VAPOR CLEAR VP ADULT",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "33256.05",
+    "Brand": "SMOOTH SKIN SKIN NOURISHING",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "19122.05",
+    "Brand": "EYE CARE ADVANCED RELIEF",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "69088.68",
+    "Brand": "SAMSONS BAGS",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "125359.27",
+    "Brand": "FRESH'N CLEAN POCKETMIST",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "12754.53",
+    "Brand": "SMOOTH SKIN",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "23269.95",
+    "Brand": "SPORIN LIP TREATMENT",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "6044.61",
+    "Brand": "ACID BEGONE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "14451.08",
+    "Brand": "ACID BEGONE EXTRA STRENGTH SOFT CH",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "208404.80",
+    "Brand": "CLEARSINUS PSE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "5506.70",
+    "Brand": "RASHFREE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "322876.14",
+    "Brand": "SPORIN ANTI BACTERIAL",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "12749.42",
+    "Brand": "SPORIN LIP TREATMENT",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "56720.33",
+    "Brand": "VAPOR CLEAR SHOWER SOOTHERS",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "11701.11",
+    "Brand": "COLDCARE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "23593.14",
+    "Brand": "EYE CARE ADVANCED RELIEF",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "83617.06",
+    "Brand": "HEMPAD",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "31323.19",
+    "Brand": "KIDCARE",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "36073.64",
+    "Brand": "ACID BEGONE EXTRA STRENGTH",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "49836.64",
+    "Brand": "SAMSONS BAGS",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "6645.58",
+    "Brand": "ACID BEGONE MULTI SYMPTOM",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "11105.32",
+    "Brand": "CLEAN TEETH",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "2991.69",
+    "Brand": "EYE CARE A",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "172373.22",
+    "Brand": "SWEET DREAMS ",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "15195.98",
+    "Brand": "EYE CARE TEARS",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "18258.04",
+    "Brand": "SPORIN ANTI FUNGAL",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "29170.91",
+    "Brand": "ACID BEGONE EXTRA STRENGTH",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "138132.71",
+    "Brand": "ANTI-GERM",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "15340.77",
+    "Brand": "CLEAN TEETH",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "2173832.10",
+    "Brand": "FRESH'N CLEAN MOUTHWASH",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "443888.82",
+    "Brand": "HAPPY DAY",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "215579.78",
+    "Brand": "CLEARSINUS PSE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "7053.65",
+    "Brand": "ACID BEGONE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "9810.71",
+    "Brand": "COLDCARE",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "1737875.79",
+    "Brand": "FRESH'N CLEAN MOUTHWASH",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "141918.84",
+    "Brand": "HAPPY DAY CERTAINTY",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "18081.88",
+    "Brand": "SPORIN LIP TREATMENT",
+    "Retailer_Name": "Walmart"
+  },
+  {
+    "Sold_Dollars": "61557.11",
+    "Brand": "ACID BEGONE EXTRA STRENGTH",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "553786.69",
+    "Brand": "REFLUX 150",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "218247.32",
+    "Brand": "SWEET DREAMS ",
+    "Retailer_Name": "Carrefour"
+  },
+  {
+    "Sold_Dollars": "353806.12",
+    "Brand": "CLEARSINUS PE",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "56724.36",
+    "Brand": "FRESH'N CLEAN POCKETMIST",
+    "Retailer_Name": "Food Lion"
+  },
+  {
+    "Sold_Dollars": "16819.95",
+    "Brand": "SPORIN ANTI FUNGAL",
+    "Retailer_Name": "Kroger"
+  },
+  {
+    "Sold_Dollars": "4139.51",
+    "Brand": "ACID BEGONE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "65275.15",
+    "Brand": "FRESH'N CLEAN POCKETMIST",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "7998.81",
+    "Brand": "RASHFREE",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "368474.59",
+    "Brand": "SPORIN ANTI BACTERIAL",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "118385.51",
+    "Brand": "SWEET DREAMS ",
+    "Retailer_Name": "Metro"
+  },
+  {
+    "Sold_Dollars": "13982.36",
+    "Brand": "NO-VERTIGO",
+    "Retailer_Name": "Walmart"
+  }
+]

@@ -1,0 +1,53 @@
+﻿/*@C1: #5B6984;*/
+
+
+#slideout {
+  position: fixed;
+  top: 300px;
+  right: 0;
+  width: 35px;
+  padding: 12px 0;
+  text-align: center;
+  background: #5B6984;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  z-index:100;
+}
+#slideout_inner {
+  position: fixed;
+  top: 80px;
+  right: -500px;
+  background: #5B6984;
+  width: 455px;
+  padding: 3px 25px 5px 25px;
+  height: 710px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  text-align: left;
+  -webkit-border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+}
+
+#slideout.slideItOut {
+    right: 450px;
+}
+#slideout.slideItOut #slideout_inner {
+    right: 0;
+}
+
+.SlideOutCloseButton {
+    cursor:pointer;
+    color:white;
+    /*font-size:medium;*/
+    font-size: 14px;
+    padding:10px 1px 2px 1px;
+    margin-top:-10px;
+}

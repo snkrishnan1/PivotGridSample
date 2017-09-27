@@ -1,0 +1,19 @@
+﻿<div id="slideout" [class.slideItOut]="slideItOut">
+    <div style="cursor:pointer">
+        <img src="../igPivotGrid-FlatDataSource/CustomizeSlideOutText.png" (click)="slideItOut=true" alt="Feedback" />
+    </div>
+    <div id="slideout_inner" style="overflow:auto;">
+        <form>
+            <a class="SlideOutCloseButton" (click)="slideItOut=!slideItOut">Close --></a>
+            <!--<div id="configurator" class="hidden-on-narrow"></div>-->
+            <ig-pivot-data-selector [widgetId]="selectorId" [options]="optsSelector">
+            </ig-pivot-data-selector>
+            
+            <div style="float:right; padding-top:5px;">
+                <a class="SlideOutCloseButton" style="margin-right:-10px;" (click)="slideItOut=!slideItOut">Close --></a>
+            </div>
+           
+        </form>
+    </div>
+</div>
+
