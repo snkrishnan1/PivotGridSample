@@ -18,9 +18,12 @@ declare var window: any;
 export class InfraPivotGrid {
     private optsGrid: IgPivotGrid;
     private gridId: string;
+    private selectorId: string;
     private data: any;
     private result: any;
     @ViewChild(SlideOut) slideOut: SlideOut;
+    showRowTotalOnTop: boolean;
+    private optsSelector: IgPivotDataSelector;
     @Input() ReportID: any;
     //widgetConfigData: any;
 
@@ -29,6 +32,8 @@ export class InfraPivotGrid {
     constructor(private _SessionService: SessionService, private _WidgetConfigService: WidgetConfigService) {
         console.log("In constructor of InfraPivotGrid");
         this.gridId = "pivotGrid";
+        this.selectorId = "dataSelector";
+	    this.showRowTotalOnTop = true;
     }
 
 
@@ -47,8 +52,15 @@ export class InfraPivotGrid {
         }
     }
 
-    public LoadInfraPivotGrid() {
-        //let widgetConfigData: any;
+    public LoadInfraPivotGrid()
+    {
+        console.log("In LoadInfraPivotGrid, ReportID : " + this.ReportID);
+        console.log("this.CacheURL : " + this.CacheURL);
+
+        let getWindow = () => {
+            return window.innerHeight - 150;
+        };
+
         this._WidgetConfigService.GetData(this.ReportID).subscribe(reslt => {
             //console.log("data from Redic Cache");
             //console.log(reslt);
@@ -142,6 +154,12 @@ export class InfraPivotGrid {
                 if (widgetConfigData.dateFormats != null)
                     window.dateFormats = widgetConfigData.dateFormats.split("|");
 
+                if (widgetConfigData.showRowTotalOnTop == "false")
+                    this.showRowTotalOnTop = false;
+
+                console.log("Before binding grid");
+                var windowHeight = getWindow() + "px";
+
                 this.optsGrid = {
                     dataSource: this.data,
                     height: "630px",
@@ -155,7 +173,7 @@ export class InfraPivotGrid {
                     defaultRowHeaderWidth: 130,
                     levelSortDirections: widgetConfigData.levelSortDirections,
                     allowResizing: true,
-                    isParentInFrontForRows: true,//to show the summary/total row in the bottom
+                    isParentInFrontForRows: this.showRowTotalOnTop,//to show the summary/total row in the bottom
                     gridOptions: {
                         defaultColumnWidth: 100,
                         features: [
@@ -178,6 +196,7 @@ export class InfraPivotGrid {
                         },
                     },
                     dataSourceInitialized: function (evt, ui) {
+                        ui.owner.expandTupleMember("rowAxis", 0, 0, true);
                         //ui.owner.expandTupleMember("rowAxis", 0, 0, true);
                         //ui.owner.expandTupleMember("columnAxis", 0, 0, true);
                     },
