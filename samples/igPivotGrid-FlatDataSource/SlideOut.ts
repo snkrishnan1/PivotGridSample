@@ -49,6 +49,10 @@ export class SlideOut {
         }
     }
 
+    dataSelectorRenderedHandler(args) {
+        args.ui.owner._setOption("deferUpdate", true);
+    }
+
     public LoadConfigurator(dataSource: any)
     {
         let getWindow = () => {

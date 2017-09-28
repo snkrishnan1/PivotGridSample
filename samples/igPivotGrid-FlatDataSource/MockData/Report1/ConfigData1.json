@@ -1,1 +1,432 @@
-{"allowHeaderColumnsSorting":true,"allowHeaderRowsSorting":true,"allowSorting":true,"compactColumnHeaderIndentation":5,"compactRowHeaderIndentation":5,"defaultLevelSortBehavior":1,"defaultRowHeaderWidth":50,"gridOptions":{"caption":"","defaultColumnWidth":"50","tabIndex":1},"dataSource":{"columns":"","measures":"[Measures].[Sold_Dollars],[Measures].[bsFnXCalc1],[Measures].[bsFnXCalc2],[Measures].[bsFnXCalc3],[Measures].[bsFnXCalc4]","rows":"[Retailer_Name].[Retailer_Name],[Brand].[Brand]","metadata":{"cube":{"dimensions":[{"caption": "Brand", "name": "Brand", "hierarchies": [{"caption": "Brand", "name": "Brand", "levels": [{"name": "All Brand", "caption": "All Brand","memberProvider": "function (item) {return 'All Brand'; }"},{"name": "Brand", "caption": "Brand","memberProvider": "function (item) { return item.Brand; }"}]}]},{"caption": "Retailer Name", "name": "Retailer_Name", "hierarchies": [{"caption": "Retailer Name", "name": "Retailer_Name", "levels": [{"name": "All Retailer", "caption":"All Retailer","memberProvider": "function (item) { return 'All Retailer'; }"},{"name": "Retailer_Name", "caption": "Retailer","memberProvider": "function (item) { return item.Retailer_Name; }"}]}]}],"measuresDimension":{"measures":[{"aggregator":"function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Sold_Dollars; } ); return sum; }","caption":"Sold Dollars  ($ - dollars)","name":"Sold_Dollars"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 1;      return result; }","caption":"Calculated Column 1","name":"bsFnXCalc1"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 2 ;      return result; }","caption":"Calculated Column 2","name":"bsFnXCalc2"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 3;      return result; }","caption":"Calculated Column 3","name":"bsFnXCalc3"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 4 ;      return result; }","caption":"Calculated Column 4","name":"bsFnXCalc4"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 5 ;      return result; }","caption":"Calc5","name":"bsFnXCalc5"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars * 6;      return result; }","caption":"Calc6","name":"bsFnXCalc6"},{"aggregator":"function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var Sold_Dollars = 0;       $.each(items, function (index, item) {            Sold_Dollars += item.Sold_Dollars;      });       result = Sold_Dollars*7;      return result; }","caption":"Calc7","name":"bsFnXCalc7"}],"name":"Measures"},"caption":"a-DemoReport","name":"a-DemoReport"}}},"levelSortDirections":[{"levelUniqueName":"[Brand].[Brand].[Brand]","sortDirection":"ascending"},{"levelUniqueName":"[Retailer_Name].[Retailer_Name].[Retailer_Name]","sortDirection":"ascending"}],"rowHeaderLinkGroupIndentation":10,"treeRowHeaderIndentation":10,"rowsRendering":"","rendering":"function (event, object) {  for (var i = 0; i < object.owner.options.columns.length; i++) {  object.owner.options.columns[i].headerCssClass = \"center-align\";switch (object.owner.options.columns[i].headerText) {  case \"Sold Dollars  ($ - dollars)\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"Brand\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Retailer Name\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Calculated Column 1\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calculated Column 2\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calculated Column 3\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calculated Column 4\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calc5\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calc6\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  case \"Calc7\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"###,###,##0.00\");  };  break;  }  };  }  ","dateFormatColumns":"","dateFormats":"","showRowTotalOnTop":"false"}
+{
+  "allowHeaderColumnsSorting": true,
+  "allowHeaderRowsSorting": true,
+  "allowSorting": true,
+  "compactColumnHeaderIndentation": 5,
+  "compactRowHeaderIndentation": 5,
+  "defaultLevelSortBehavior": 1,
+  "defaultRowHeaderWidth": 50,
+  "gridOptions": {
+    "caption": "",
+    "defaultColumnWidth": "50",
+    "tabIndex": 1
+  },
+  "dataSource": {
+    "columns": "[Retailer_Name].[Retailer_Name]",
+    "measures": "[Measures].[OnHandUnits],[Measures].[OnHandDollars],[Measures].[SellThru],[Measures].[AnnualizedUnitsPerWeek],[Measures].[UnitsSoldYTD],[Measures].[LYUnitsSoldYTD],[Measures].[bsFnXYTD % Diff],[Measures].[bsFnXTYD<br>KPI],[Measures].[UnitsSold1Week],[Measures].[LYUnitsSold1Week],[Measures].[bsFnXOne Week % Diff],[Measures].[bsFnX_1 Wk KPI],[Measures].[UnitsSold2Week],[Measures].[LYUnitsSold2Week],[Measures].[bsFnXTwo Week % Diff],[Measures].[bsFnX_2 Wk KPI],[Measures].[UnitsSold4Week],[Measures].[LYUnitsSold4Week],[Measures].[bsFnXFour Week % Diff],[Measures].[bsFnX_4 Wk KPI],[Measures].[UnitsSold8Week],[Measures].[LYUnitsSold8Week],[Measures].[bsFnXEight Week % Diff],[Measures].[bsFnX_8 Wk KPI],[Measures].[UnitsSold32Week],[Measures].[LYUnitsSold32Week],[Measures].[bsFnXThirtytwo Week % Diff],[Measures].[bsFnX_32 Wk KPI],[Measures].[UnitsSold52Week],[Measures].[LYUnitsSold52Week],[Measures].[bsFnXFiftytwo Week % Diff],[Measures].[bsFnX_52 Wk KPI]",
+    "rows": "[MDSE_Category].[MDSE_Category],[Item_Nbr].[Item_Nbr]",
+    "metadata": {
+      "cube": {
+        "dimensions": [
+          {
+            "type": "Number",
+            "source": "Item_Nbr",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Item_Nbr; }",
+                    "caption": "Item Nbr",
+                    "name": "Item_Nbr"
+                  }
+                ],
+                "caption": "Item Nbr",
+                "name": "Item_Nbr"
+              }
+            ],
+            "caption": "Item Nbr",
+            "name": "Item_Nbr"
+          },
+          {
+            "type": "String",
+            "source": "Prime_Item_Desc",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Prime_Item_Desc; }",
+                    "caption": "Item Desc",
+                    "name": "Prime_Item_Desc"
+                  }
+                ],
+                "caption": "Item Desc",
+                "name": "Prime_Item_Desc"
+              }
+            ],
+            "caption": "Item Desc",
+            "name": "Prime_Item_Desc"
+          },
+          {
+            "type": "String",
+            "source": "MDSE_Category",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.MDSE_Category; }",
+                    "caption": "Category",
+                    "name": "MDSE_Category"
+                  }
+                ],
+                "caption": "Category",
+                "name": "MDSE_Category"
+              }
+            ],
+            "caption": "Category",
+            "name": "MDSE_Category"
+          },
+          {
+            "type": "String",
+            "source": "VendorName",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.VendorName; }",
+                    "caption": "Vendor",
+                    "name": "VendorName"
+                  }
+                ],
+                "caption": "Vendor",
+                "name": "VendorName"
+              }
+            ],
+            "caption": "Vendor",
+            "name": "VendorName"
+          },
+          {
+            "type": "String",
+            "source": "Retailer_Name",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Retailer_Name; }",
+                    "caption": "Retailer",
+                    "name": "Retailer_Name"
+                  }
+                ],
+                "caption": "Retailer",
+                "name": "Retailer_Name"
+              }
+            ],
+            "caption": "Retailer",
+            "name": "Retailer_Name"
+          },
+          {
+            "type": "String",
+            "source": "State",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.State; }",
+                    "caption": "State",
+                    "name": "State"
+                  }
+                ],
+                "caption": "State",
+                "name": "State"
+              }
+            ],
+            "caption": "State",
+            "name": "State"
+          },
+          {
+            "type": "String",
+            "source": "Prime_Item_Nbr",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Prime_Item_Nbr; }",
+                    "caption": "Prime Item Nbr",
+                    "name": "Prime_Item_Nbr"
+                  }
+                ],
+                "caption": "Prime Item Nbr",
+                "name": "Prime_Item_Nbr"
+              }
+            ],
+            "caption": "Prime Item Nbr",
+            "name": "Prime_Item_Nbr"
+          }
+        ],
+        "measuresDimension": {
+          "measures": [
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold1Week; } ); return sum; }",
+              "caption": "CY 1Wk Units",
+              "name": "UnitsSold1Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold2Week; } ); return sum; }",
+              "caption": "CY 2Wk Units",
+              "name": "UnitsSold2Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold4Week; } ); return sum; }",
+              "caption": "CY 4Wk Units",
+              "name": "UnitsSold4Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold8Week; } ); return sum; }",
+              "caption": "CY 8Wk  Units",
+              "name": "UnitsSold8Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold32Week; } ); return sum; }",
+              "caption": "CY 32Wk Units",
+              "name": "UnitsSold32Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSold52Week; } ); return sum; }",
+              "caption": "CY 52Wk Units",
+              "name": "UnitsSold52Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSoldYTD; } ); return sum; }",
+              "caption": "CY YTD Units",
+              "name": "UnitsSoldYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold1Week; } ); return sum; }",
+              "caption": "LY 1Wk Units",
+              "name": "LYUnitsSold1Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold2Week; } ); return sum; }",
+              "caption": "LY 2Wk Units",
+              "name": "LYUnitsSold2Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold4Week; } ); return sum; }",
+              "caption": "LY 4Wk Units",
+              "name": "LYUnitsSold4Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold8Week; } ); return sum; }",
+              "caption": "LY 8Wk Units",
+              "name": "LYUnitsSold8Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold32Week; } ); return sum; }",
+              "caption": "LY 32Wk Units",
+              "name": "LYUnitsSold32Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSold52Week; } ); return sum; }",
+              "caption": "LY 52Wk Units",
+              "name": "LYUnitsSold52Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSoldYTD; } ); return sum; }",
+              "caption": "LY YTD Units",
+              "name": "LYUnitsSoldYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.OnHandUnits; } ); return sum; }",
+              "caption": "On-Hand Units",
+              "name": "OnHandUnits"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.OnHandDollars; } ); return sum; }",
+              "caption": "On-Hand Dollars",
+              "name": "OnHandDollars"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold1Week = 0;      var LYUnitsSold1Week = 0;       $.each(items, function (index, item) {            UnitsSold1Week += item.UnitsSold1Week;           LYUnitsSold1Week += item.LYUnitsSold1Week;      });       result = (IIF(LYUnitsSold1Week != 0,((UnitsSold1Week - LYUnitsSold1Week) / LYUnitsSold1Week),0));      return result; }",
+              "caption": "1 Week % Diff",
+              "name": "bsFnXOne Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold2Week = 0;      var LYUnitsSold2Week = 0;       $.each(items, function (index, item) {            UnitsSold2Week += item.UnitsSold2Week;           LYUnitsSold2Week += item.LYUnitsSold2Week;      });       result = (IIF(LYUnitsSold2Week != 0,((UnitsSold2Week - LYUnitsSold2Week) / LYUnitsSold2Week),0));      return result; }",
+              "caption": "2 Week % Diff",
+              "name": "bsFnXTwo Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold4Week = 0;      var LYUnitsSold4Week = 0;       $.each(items, function (index, item) {            UnitsSold4Week += item.UnitsSold4Week;           LYUnitsSold4Week += item.LYUnitsSold4Week;      });       result = (IIF(LYUnitsSold4Week != 0,((UnitsSold4Week - LYUnitsSold4Week) / LYUnitsSold4Week),0));      return result; }",
+              "caption": "4 Week % Diff",
+              "name": "bsFnXFour Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold8Week = 0;      var LYUnitsSold8Week = 0;       $.each(items, function (index, item) {            UnitsSold8Week += item.UnitsSold8Week;           LYUnitsSold8Week += item.LYUnitsSold8Week;      });       result = (IIF(LYUnitsSold8Week != 0,((UnitsSold8Week - LYUnitsSold8Week) / LYUnitsSold8Week),0));      return result; }",
+              "caption": "8 Week % Diff",
+              "name": "bsFnXEight Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold32Week = 0;      var LYUnitsSold32Week = 0;       $.each(items, function (index, item) {            UnitsSold32Week += item.UnitsSold32Week;           LYUnitsSold32Week += item.LYUnitsSold32Week;      });       result = (IIF(LYUnitsSold32Week != 0,((UnitsSold32Week - LYUnitsSold32Week) / LYUnitsSold32Week),0));      return result; }",
+              "caption": "32 Week % Diff",
+              "name": "bsFnXThirtytwo Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold52Week = 0;      var LYUnitsSold52Week = 0;       $.each(items, function (index, item) {            UnitsSold52Week += item.UnitsSold52Week;           LYUnitsSold52Week += item.LYUnitsSold52Week;      });       result = (IIF(LYUnitsSold52Week != 0,((UnitsSold52Week - LYUnitsSold52Week) / LYUnitsSold52Week),0));      return result; }",
+              "caption": "52 Week % Diff",
+              "name": "bsFnXFiftytwo Week % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSoldYTD = 0;      var LYUnitsSoldYTD = 0;       $.each(items, function (index, item) {            UnitsSoldYTD += item.UnitsSoldYTD;           LYUnitsSoldYTD += item.LYUnitsSoldYTD;      });       result = (IIF(UnitsSoldYTD != 0,((UnitsSoldYTD - LYUnitsSoldYTD) / LYUnitsSoldYTD),0));      return result; }",
+              "caption": "YTD % Diff",
+              "name": "bsFnXYTD % Diff"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars1Week; } ); return sum; }",
+              "caption": "Current Wk Dollars",
+              "name": "UnitDollars1Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars2Week; } ); return sum; }",
+              "caption": "CY 2 Wk Dollars",
+              "name": "UnitDollars2Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars4Week; } ); return sum; }",
+              "caption": "CY 4Wk Dollars",
+              "name": "UnitDollars4Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars8Week; } ); return sum; }",
+              "caption": "CY 8Wk Dollars",
+              "name": "UnitDollars8Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars32Week; } ); return sum; }",
+              "caption": "CY 32Wk Dollars",
+              "name": "UnitDollars32Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollars52Week; } ); return sum; }",
+              "caption": "CY 52Wk Dollars",
+              "name": "UnitDollars52Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitDollarsYTD; } ); return sum; }",
+              "caption": "YTD Dollars",
+              "name": "UnitDollarsYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars1Week; } ); return sum; }",
+              "caption": "LY Current Wk Dollars",
+              "name": "LYUnitDollars1Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars2Week; } ); return sum; }",
+              "caption": "LY 2Wk Dollars",
+              "name": "LYUnitDollars2Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars4Week; } ); return sum; }",
+              "caption": "LY 4Wk Dollars",
+              "name": "LYUnitDollars4Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars8Week; } ); return sum; }",
+              "caption": "LY 8Wk Dollars",
+              "name": "LYUnitDollars8Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars32Week; } ); return sum; }",
+              "caption": "LY 32Wk Dollars",
+              "name": "LYUnitDollars32Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollars52Week; } ); return sum; }",
+              "caption": "q1_LYUnitDollars52Week",
+              "name": "LYUnitDollars52Week"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitDollarsYTD; } ); return sum; }",
+              "caption": "LY YTD Dollars",
+              "name": "LYUnitDollarsYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.SellThru; } ); var avg = sum / items.length; return avg; }",
+              "caption": " Turns",
+              "name": "SellThru"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.AnnualizedUnitsPerWeek; } ); return sum; }",
+              "caption": "Avg Weekly Units",
+              "name": "AnnualizedUnitsPerWeek"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold2Week = 0;      var LYUnitsSold2Week = 0;       $.each(items, function (index, item) {            UnitsSold2Week += item.UnitsSold2Week;           LYUnitsSold2Week += item.LYUnitsSold2Week;      });       result = IIF(UnitsSold2Week > LYUnitsSold2Week, 1, -1);      return result; }",
+              "caption": " 2 Wk KPI",
+              "name": "bsFnX_2 Wk KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSoldYTD = 0;      var LYUnitsSoldYTD = 0;       $.each(items, function (index, item) {            UnitsSoldYTD += item.UnitsSoldYTD;           LYUnitsSoldYTD += item.LYUnitsSoldYTD;      });       result = IIF(UnitsSoldYTD > LYUnitsSoldYTD, 1, -1);      return result; }",
+              "caption": "YTD KPI",
+              "name": "bsFnXTYD<br>KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold1Week = 0;      var LYUnitsSold1Week = 0;       $.each(items, function (index, item) {            UnitsSold1Week += item.UnitsSold1Week;           LYUnitsSold1Week += item.LYUnitsSold1Week;      });       result = IIF(UnitsSold1Week > LYUnitsSold1Week, 1, -1);      return result; }",
+              "caption": "1 Wk KPI",
+              "name": "bsFnX_1 Wk KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold4Week = 0;      var LYUnitsSold4Week = 0;       $.each(items, function (index, item) {            UnitsSold4Week += item.UnitsSold4Week;           LYUnitsSold4Week += item.LYUnitsSold4Week;      });       result = IIF(UnitsSold4Week > LYUnitsSold4Week, 1, -1);      return result; }",
+              "caption": "4 Wk KPI",
+              "name": "bsFnX_4 Wk KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold8Week = 0;      var LYUnitsSold8Week = 0;       $.each(items, function (index, item) {            UnitsSold8Week += item.UnitsSold8Week;           LYUnitsSold8Week += item.LYUnitsSold8Week;      });       result = IIF(UnitsSold8Week > LYUnitsSold8Week, 1, -1);      return result; }",
+              "caption": "8 Wk KPI",
+              "name": "bsFnX_8 Wk KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold52Week = 0;      var LYUnitsSold52Week = 0;       $.each(items, function (index, item) {            UnitsSold52Week += item.UnitsSold52Week;           LYUnitsSold52Week += item.LYUnitsSold52Week;      });       result = IIF(UnitsSold52Week > LYUnitsSold52Week, 1, -1);      return result; }",
+              "caption": "52 Wk KPI",
+              "name": "bsFnX_52 Wk KPI"
+            },
+            {
+              "aggregator": "function(items, cellMetadata)  {      var measure = cellMetadata.measures().item(0).uniqueName();      var result;      var UnitsSold32Week = 0;      var LYUnitsSold32Week = 0;       $.each(items, function (index, item) {            UnitsSold32Week += item.UnitsSold32Week;           LYUnitsSold32Week += item.LYUnitsSold32Week;      });       result = IIF(UnitsSold32Week > LYUnitsSold32Week, 1, -1);      return result; }",
+              "caption": "32 Wk KPI",
+              "name": "bsFnX_32 Wk KPI"
+            }
+          ],
+          "name": "Measures"
+        },
+        "caption": "Activity 1b - Item Scorecard",
+        "name": "Activity 1b - Item Scorecard"
+      }
+    }
+  },
+  "levelSortDirections": [
+    {
+      "levelUniqueName": "[Item_Nbr].[Item_Nbr].[Item_Nbr]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[Prime_Item_Desc].[Prime_Item_Desc].[Prime_Item_Desc]",
+      "sortDirection": "descending"
+    },
+    {
+      "levelUniqueName": "[MDSE_Category].[MDSE_Category].[MDSE_Category]",
+      "sortDirection": "descending"
+    },
+    {
+      "levelUniqueName": "[VendorName].[VendorName].[VendorName]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[Retailer_Name].[Retailer_Name].[Retailer_Name]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[State].[State].[State]",
+      "sortDirection": "descending"
+    },
+    {
+      "levelUniqueName": "[Prime_Item_Nbr].[Prime_Item_Nbr].[Prime_Item_Nbr]",
+      "sortDirection": "descending"
+    }
+  ],
+  "rowHeaderLinkGroupIndentation": 10,
+  "treeRowHeaderIndentation": 10,
+  "rowsRendering": "",
+  "rendering": "function (event, object) {  for (var i = 0; i < object.owner.options.columns.length; i++) {  object.owner.options.columns[i].headerCssClass = \"center-align\";switch (object.owner.options.columns[i].headerText) {  case \"CY 1Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY 2Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY 4Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY 8Wk  Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY 32Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY 52Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY YTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 1Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 2Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 4Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 8Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 32Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY 52Wk Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY YTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"On-Hand Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,224,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"On-Hand Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;   jQuery.ig.regional.defaults.currencySymbol = \"$\";      if (val > -10000) {    return \"<kbd style='background-color: rgb(255,224,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\");   }   };  break;  case \"Item Nbr\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"Item Desc\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Category\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Vendor\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Retailer\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"State\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"1 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"2 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"4 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"8 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"32 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";   } else   if (val < 0) {    return \"<kbd style='background-color: rgb(0,0,0); color: rgb(255,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"52 Week % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"YTD % Diff\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 3;   jQuery.ig.regional.defaults.currencyMinDecimals = 3;     if (val > -10000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"percent\");   }   };  break;  case \"Current Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"CY 2 Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"CY 4Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"CY 8Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"CY 32Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"CY 52Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"YTD Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY Current Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY 2Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY 4Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY 8Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY 32Wk Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"q1_LYUnitDollars52Week\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"LY YTD Dollars\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"Prime Item Nbr\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \" Turns\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0.00\");  };  break;  case \"Avg Weekly Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \" 2 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"YTD KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"1 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"4 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"8 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"52 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  case \"32 Wk KPI\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 2;   jQuery.ig.regional.defaults.currencyMinDecimals = 2;     if (val == -1) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/-1.png' />\";   } else if (val == 0) {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/0.png' />\";   } else {   return \"<img style='width: 15px;height:15px;' src='/images/StatusArrow/1.png' />\";   }   };  break;  }  };  }  ",
+  "dateFormatColumns": "",
+  "dateFormats": "",
+  "showRowTotalOnTop": "true"
+}

@@ -28,6 +28,7 @@ export class InfraPivotGrid {
 
     constructor(private _SessionService: SessionService, private _WidgetConfigService: WidgetConfigService) {
         console.log("In constructor of InfraPivotGrid");
+        this.gridId = "pivotGrid";
     }
 
 
@@ -67,7 +68,7 @@ export class InfraPivotGrid {
                 //this.widgetConfigData = res;
                 //console.log("this.widgetConfigData");
                 //console.log(this.widgetConfigData);
-                this.gridId = "pivotGrid";
+               
 
                 var dateHierarchy = false;
                 var widgetConfigData = JSON.parse(res, (key, value) => {

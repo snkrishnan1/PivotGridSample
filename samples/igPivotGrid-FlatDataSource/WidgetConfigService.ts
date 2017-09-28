@@ -61,9 +61,14 @@ export class WidgetConfigService {
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report1/CacheJsonData1.json";
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report1/ConfigData1.json";
         }
-        else {
+        else if (requrl == "Report2") {
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report2/CacheJsonData2.json";
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report2/ConfigData2.json";
+        }
+        else
+        {
+            this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report3/CacheJsonData3.json";
+            this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report3/ConfigData3.json";
         }
 
 

@@ -1,1 +1,279 @@
-{"allowHeaderColumnsSorting":true,"allowHeaderRowsSorting":true,"allowSorting":true,"compactColumnHeaderIndentation":5,"compactRowHeaderIndentation":5,"defaultLevelSortBehavior":1,"defaultRowHeaderWidth":50,"gridOptions":{"caption":"","defaultColumnWidth":"50","tabIndex":1},"dataSource":{"columns":"","measures":"[Measures].[Sold_Dollars],[Measures].[Sold_Units],[Measures].[Rtlr_Cost],[Measures].[Rtlr_Price]","rows":"[Brand].[Brand],[Rtlr_Name].[Rtlr_Name]","metadata":{"cube":{"dimensions":[{"type":"String","source":"Brand","hierarchies":[{"levels":[{"memberProvider":"function (item) { return item.Brand; }","caption":"Brand","name":"Brand"}],"caption":"Brand","name":"Brand"}],"caption":"Brand","name":"Brand"},{"type":"Date","source":"FIRST_DAY_OF_MONTH","hierarchies":[{"levels":[{"memberProvider":"Formatter0","caption":"First Day Of Month","name":"FIRST_DAY_OF_MONTH"}],"caption":"First Day Of Month","name":"FIRST_DAY_OF_MONTH"}],"caption":"First Day Of Month","name":"FIRST_DAY_OF_MONTH"},{"type":"String","source":"Rtlr_Name","hierarchies":[{"levels":[{"memberProvider":"function (item) { return item.Rtlr_Name; }","caption":"Rtlr Name","name":"Rtlr_Name"}],"caption":"Rtlr Name","name":"Rtlr_Name"}],"caption":"Rtlr Name","name":"Rtlr_Name"}],"measuresDimension":{"measures":[{"aggregator":"function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Sold_Dollars; } ); return sum; }","caption":"Sold Dollars ($ - US Dollars) currency","name":"Sold_Dollars"},{"aggregator":"function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Sold_Units; } ); return sum; }","caption":"Sold Units measures in the number of items sold","name":"Sold_Units"},{"aggregator":"function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Rtlr_Price; } ); return sum; }","caption":"Rtlr Price ($ - US Dollars) currency","name":"Rtlr_Price"},{"aggregator":"function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Rtlr_Cost; } ); return sum; }","caption":"Rtlr Cost ($ - US Dollars) Currency","name":"Rtlr_Cost"}],"name":"Measures"},"caption":"ExceptionHighlightingReports","name":"ExceptionHighlightingReports"}}},"levelSortDirections":[{"levelUniqueName":"[Brand].[Brand].[Brand]","sortDirection":"ascending"},{"levelUniqueName":"[FIRST_DAY_OF_MONTH].[FIRST_DAY_OF_MONTH].[FIRST_DAY_OF_MONTH]","sortDirection":"ascending"},{"levelUniqueName":"[Rtlr_Name].[Rtlr_Name].[Rtlr_Name]","sortDirection":"ascending"}],"rowHeaderLinkGroupIndentation":10,"treeRowHeaderIndentation":10,"rowsRendering":"","rendering":"function (event, object) {  for (var i = 0; i < object.owner.options.columns.length; i++) {  object.owner.options.columns[i].headerCssClass = \"center-align\";switch (object.owner.options.columns[i].headerText) {  case \"Sold Dollars ($ - US Dollars) currency\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;   jQuery.ig.regional.defaults.currencySymbol = \"$\";      if (val < 1000000) {    return \"<kbd style='background-color: rgb(255,0,0); color: rgb(255,255,255); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\");   }   };  break;  case \"Sold Units measures in the number of items sold\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val < 1000000) {    return \"<kbd style='background-color: rgb(255,255,0); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Rtlr Price ($ - US Dollars) currency\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;   jQuery.ig.regional.defaults.currencySymbol = \"$\";     return jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\");  };  break;  case \"Rtlr Cost ($ - US Dollars) Currency\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;   jQuery.ig.regional.defaults.currencySymbol = \"$\";     return jQuery.ig.formatter(parseFloat(val), \"number\", \"currency\");  };  break;  case \"Brand\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"First Day Of Month\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return val;  };  break;  case \"Rtlr Name\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  }  };  }  ","dateFormatColumns":"FIRST_DAY_OF_MONTH","dateFormats":"","showRowTotalOnTop":"false"}
+{
+  "allowHeaderColumnsSorting": true,
+  "allowHeaderRowsSorting": true,
+  "allowSorting": true,
+  "compactColumnHeaderIndentation": 5,
+  "compactRowHeaderIndentation": 5,
+  "defaultLevelSortBehavior": 1,
+  "defaultRowHeaderWidth": 50,
+  "gridOptions": {
+    "caption": "",
+    "defaultColumnWidth": "50",
+    "tabIndex": 1
+  },
+  "dataSource": {
+    "columns": "[Retailer_Name].[Retailer_Name]",
+    "measures": "[Measures].[UnitsSoldMTD],[Measures].[UnitsSoldYTD],[Measures].[AGE_18_34],[Measures].[AGE_35_54],[Measures].[AGE_55_64],[Measures].[HOUSEHOLD_1_PERSON],[Measures].[HOUSEHOLD_2_3_PERSONS],[Measures].[HOUSEHOLD_4_PLUS_PERSONS],[Measures].[Suburban],[Measures].[Rural],[Measures].[EDU_HIGHSCHOOL_OR_LESS],[Measures].[EDU_HIGHSCHOOL_GRADS],[Measures].[EDU_SOME_COLLEGE_OR_MORE],[Measures].[INCOME_UNDER_30K],[Measures].[INCOME_30_TO_49K],[Measures].[INCOME_50_TO_99K],[Measures].[INCOME_100K_PLUS]",
+    "rows": "[MDSE_Category].[MDSE_Category],[Prime_Item_Desc].[Prime_Item_Desc]",
+    "metadata": {
+      "cube": {
+        "dimensions": [
+          {
+            "type": "String",
+            "source": "MDSE_Category",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.MDSE_Category; }",
+                    "caption": "Category",
+                    "name": "MDSE_Category"
+                  }
+                ],
+                "caption": "Category",
+                "name": "MDSE_Category"
+              }
+            ],
+            "caption": "Category",
+            "name": "MDSE_Category"
+          },
+          {
+            "type": "String",
+            "source": "Ethnicity",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Ethnicity; }",
+                    "caption": "Ethnicity",
+                    "name": "Ethnicity"
+                  }
+                ],
+                "caption": "Ethnicity",
+                "name": "Ethnicity"
+              }
+            ],
+            "caption": "Ethnicity",
+            "name": "Ethnicity"
+          },
+          {
+            "type": "String",
+            "source": "Retailer_Name",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Retailer_Name; }",
+                    "caption": "Retailer",
+                    "name": "Retailer_Name"
+                  }
+                ],
+                "caption": "Retailer",
+                "name": "Retailer_Name"
+              }
+            ],
+            "caption": "Retailer",
+            "name": "Retailer_Name"
+          },
+          {
+            "type": "String",
+            "source": "UPC",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.UPC; }",
+                    "caption": "UPC",
+                    "name": "UPC"
+                  }
+                ],
+                "caption": "UPC",
+                "name": "UPC"
+              }
+            ],
+            "caption": "UPC",
+            "name": "UPC"
+          },
+          {
+            "type": "String",
+            "source": "UPC_Desc",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.UPC_Desc; }",
+                    "caption": "UPC Desc",
+                    "name": "UPC_Desc"
+                  }
+                ],
+                "caption": "UPC Desc",
+                "name": "UPC_Desc"
+              }
+            ],
+            "caption": "UPC Desc",
+            "name": "UPC_Desc"
+          },
+          {
+            "type": "String",
+            "source": "Prime_Item_Desc",
+            "hierarchies": [
+              {
+                "levels": [
+                  {
+                    "memberProvider": "function (item) { return item.Prime_Item_Desc; }",
+                    "caption": "Prime Item Desc",
+                    "name": "Prime_Item_Desc"
+                  }
+                ],
+                "caption": "Prime Item Desc",
+                "name": "Prime_Item_Desc"
+              }
+            ],
+            "caption": "Prime Item Desc",
+            "name": "Prime_Item_Desc"
+          }
+        ],
+        "measuresDimension": {
+          "measures": [
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSoldYTD; } ); return sum; }",
+              "caption": "CY YTD Units",
+              "name": "UnitsSoldYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSoldYTD; } ); return sum; }",
+              "caption": "LY YTD Units",
+              "name": "LYUnitsSoldYTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.UnitsSoldMTD; } ); return sum; }",
+              "caption": "CY MTD Units",
+              "name": "UnitsSoldMTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.LYUnitsSoldMTD; } ); return sum; }",
+              "caption": "LY MTD Units",
+              "name": "LYUnitsSoldMTD"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.AGE_18_34; } ); return sum; }",
+              "caption": "Age 18-34",
+              "name": "AGE_18_34"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.AGE_35_54; } ); return sum; }",
+              "caption": "Age 35-54",
+              "name": "AGE_35_54"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.AGE_55_64; } ); return sum; }",
+              "caption": "Age 55-64",
+              "name": "AGE_55_64"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.HOUSEHOLD_1_PERSON; } ); return sum; }",
+              "caption": "Household 1 Person",
+              "name": "HOUSEHOLD_1_PERSON"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.HOUSEHOLD_2_3_PERSONS; } ); return sum; }",
+              "caption": "Household 2-3 Persons",
+              "name": "HOUSEHOLD_2_3_PERSONS"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.HOUSEHOLD_4_PLUS_PERSONS; } ); return sum; }",
+              "caption": "Household 4+ Persons",
+              "name": "HOUSEHOLD_4_PLUS_PERSONS"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Rural; } ); return sum; }",
+              "caption": "Rural",
+              "name": "Rural"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Suburban; } ); return sum; }",
+              "caption": "Suburban",
+              "name": "Suburban"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.Urban; } ); return sum; }",
+              "caption": "Urban",
+              "name": "Urban"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.EDU_HIGHSCHOOL_OR_LESS; } ); return sum; }",
+              "caption": "EDU HS or Less",
+              "name": "EDU_HIGHSCHOOL_OR_LESS"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.EDU_HIGHSCHOOL_GRADS; } ); return sum; }",
+              "caption": "EDU HS Grads",
+              "name": "EDU_HIGHSCHOOL_GRADS"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.EDU_SOME_COLLEGE_OR_MORE; } ); return sum; }",
+              "caption": "EDU Some College",
+              "name": "EDU_SOME_COLLEGE_OR_MORE"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.INCOME_UNDER_30K; } ); return sum; }",
+              "caption": "Income Under 30K",
+              "name": "INCOME_UNDER_30K"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.INCOME_30_TO_49K; } ); return sum; }",
+              "caption": "Income 30-49K",
+              "name": "INCOME_30_TO_49K"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.INCOME_50_TO_99K; } ); return sum; }",
+              "caption": "Income 50-99K",
+              "name": "INCOME_50_TO_99K"
+            },
+            {
+              "aggregator": "function(items, cellMetadata) { var sum = 0; $.each(items, function(index, item) { sum += item.INCOME_100K_PLUS; } ); return sum; }",
+              "caption": "Income 100K+",
+              "name": "INCOME_100K_PLUS"
+            }
+          ],
+          "name": "Measures"
+        },
+        "caption": "Traits and Demographics",
+        "name": "Traits and Demographics"
+      }
+    }
+  },
+  "levelSortDirections": [
+    {
+      "levelUniqueName": "[MDSE_Category].[MDSE_Category].[MDSE_Category]",
+      "sortDirection": "descending"
+    },
+    {
+      "levelUniqueName": "[Ethnicity].[Ethnicity].[Ethnicity]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[Retailer_Name].[Retailer_Name].[Retailer_Name]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[UPC].[UPC].[UPC]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[UPC_Desc].[UPC_Desc].[UPC_Desc]",
+      "sortDirection": "ascending"
+    },
+    {
+      "levelUniqueName": "[Prime_Item_Desc].[Prime_Item_Desc].[Prime_Item_Desc]",
+      "sortDirection": "descending"
+    }
+  ],
+  "rowHeaderLinkGroupIndentation": 10,
+  "treeRowHeaderIndentation": 10,
+  "rowsRendering": "",
+  "rendering": "function (event, object) {  for (var i = 0; i < object.owner.options.columns.length; i++) {  object.owner.options.columns[i].headerCssClass = \"center-align\";switch (object.owner.options.columns[i].headerText) {  case \"CY YTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY YTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"CY MTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"LY MTD Units\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Category\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Age 18-34\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Age 35-54\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -100000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Age 55-64\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Household 1 Person\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Household 2-3 Persons\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -100000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Household 4+ Persons\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Rural\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Suburban\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -100000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Urban\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"#########0\");  };  break;  case \"Ethnicity\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"EDU HS or Less\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"EDU HS Grads\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"EDU Some College\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -100000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Income Under 30K\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Income 30-49K\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Income 50-99K\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;     if (val > -100000) {    return \"<kbd style='background-color: rgb(255,255,192); color: rgb(0,0,0); border:0 px'>\" + jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\") + \"</kbd>\";  } else {   return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");   }   };  break;  case \"Income 100K+\":  object.owner.options.columns[i].formatter = function (val, rec) {    jQuery.ig.regional.defaults.currencyMaxDecimals = 0;   jQuery.ig.regional.defaults.currencyMinDecimals = 0;    return jQuery.ig.formatter(parseFloat(val), \"number\", \"##,###,###,##0\");  };  break;  case \"Retailer\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"UPC\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"UPC Desc\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  case \"Prime Item Desc\":  object.owner.options.columns[i].formatter = function (val, rec) {    return val;  };  break;  }  };  }  ",
+  "dateFormatColumns": "",
+  "dateFormats": "",
+  "showRowTotalOnTop": "false"
+}

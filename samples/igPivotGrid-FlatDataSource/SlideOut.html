@@ -6,7 +6,7 @@
         <form>
             <a class="SlideOutCloseButton" (click)="slideItOut=!slideItOut">Close --></a>
             <!--<div id="configurator" class="hidden-on-narrow"></div>-->
-            <ig-pivot-data-selector [widgetId]="selectorId" [options]="optsSelector">
+            <ig-pivot-data-selector [widgetId]="selectorId" [options]="optsSelector" (dataSelectorRendered)="dataSelectorRenderedHandler($event)">
             </ig-pivot-data-selector>
             
             <div style="float:right; padding-top:5px;">
