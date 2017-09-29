@@ -33,8 +33,8 @@ export class WidgetConfigService {
 
         this.DataFolder = 2;
 
-    
-        
+
+
 
         this._http = http;
     }
@@ -43,7 +43,7 @@ export class WidgetConfigService {
     //    console.log("Inside method GetSheetsByWorkbookID in WidgetConfigService");
     //    console.log("API URL: " + this.WIDGETCONFIGSERVICE_SHEETSBYWORKBOOKID);
 
-      
+
 
     //    //export const ContentHeaders = new Headers();
     //    let ContentHeaders = new Headers();
@@ -65,10 +65,13 @@ export class WidgetConfigService {
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report2/CacheJsonData2.json";
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report2/ConfigData2.json";
         }
-        else
-        {
+        else if (requrl == "Report3") {
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report3/CacheJsonData3.json";
             this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report3/ConfigData3.json";
+        }
+        else if (requrl == "Report4") {
+            this.WIDGETCONFIGSERVICE_PIVOTGRIDCACHEDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report4/CacheJsonData4.json";
+            this.WIDGETCONFIGSERVICE_PIVOTGRIDCONFIGDATAURL = this.WIDGETCONFIGSERVICE_BASEURL + "/samples/igPivotGrid-FlatDataSource/MockData/Report4/ConfigData4.json";
         }
 
 
@@ -128,7 +131,7 @@ export class WidgetConfigService {
 //    private CLIENTAPISERVICE_BASEURL: string;
 //    private CACHE_DATA: string;
 //    private CONFIG_DATA: string;
-   
+
 
 //    private _http: Http;
 
@@ -137,7 +140,7 @@ export class WidgetConfigService {
 //        this.CLIENTAPISERVICE_BASEURL = "http://localhost:3000/";
 //        this.CACHE_DATA = this.CLIENTAPISERVICE_BASEURL + "CacheJsonData.json";
 //        this.CONFIG_DATA = this.CLIENTAPISERVICE_BASEURL + "ClientApiService/GetReportGroupsList.json";
-        
+
 //        this._http = http;
 //    }
 

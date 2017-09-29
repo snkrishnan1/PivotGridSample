@@ -29,7 +29,7 @@ export class Workbook {
         this.workbookSheet = [{ "name": "" }];//Prepopulate the dropdown with empty while loading, then it is assigned with the actual value
         this.selected = this.workbookSheet;
 
-        this.workbookSheetsList = [{ "name": "Report1" }, { "name": "Report2" }, { "name": "Report3" }];
+        this.workbookSheetsList = [{ "name": "Report1" }, { "name": "Report2" }, { "name": "Report3" }, { "name": "Report4" }];
         this.ReportID = "Report1";
      
     }
